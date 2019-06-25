@@ -1,7 +1,8 @@
 import { NativeEventEmitter, NativeModules, Platform } from 'react-native';
+import Geolocation from '@react-native-community/geolocation'
 
 // eslint-disable-next-line import/no-mutable-exports
-let Geolocation = global.navigator.geolocation;
+//let Geolocation = global.navigator.geolocation;
 const noop = () => {};
 let subscriptions = [];
 let updatesEnabled = false;
